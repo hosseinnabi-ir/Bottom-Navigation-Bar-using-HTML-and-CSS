@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #f4f7f8;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
+}
+
+.navbar button {
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    transition: all .25s ease;
+}
+
+.navbar button:active:not(.plus) {
+    transform: scale(1.2);
+}
+
+.navbar button.active {
+    color: #e84c4f;
+}
+
+.navbar button i {
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.navbar button.plus {
+    height: 60px;
+    color: #fff;
+    background: #e84c4f;
+    border-radius: 25px;
+    margin-top: -50px;
+    box-shadow: 0 10px 20px 0 #e84c4f66;
+}
+
+.navbar button.plus:hover {
+    transform: translateY(-4px);
+}
+
+.navbar .effect {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 18px;
+    background: #e84c4f26;
+    opacity: 0;
+}
